@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast</title>
+  <link rel="stylesheet" href="meteo.css">
+</head>
+<body>
+  <main class="weather-container">
+    <!-- Current Weather Section -->
+    <section class="current-weather">
+      <h1 class="city">New York, NY</h1>
+      <p class="date">Tuesday, April 15th</p>
+      <p class="condition">Overcast</p>
+      <div class="temperature">
+        <img src="Image/Image7rain.png" alt="Cloudy">
+        <span>58°F</span>
+      </div>
+      <ul class="details">
+        <li>Precipitation: 100%</li>
+        <li>Humidity: 97%</li>
+        <li>Wind: 4 mph SW</li>
+        <li>Pollen Count: 36</li>
+      </ul>
+    </section>
+
+    <!-- Weekly Forecast Section -->
+    <section class="weekly-forecast">
+      <div class="day">
+        <p>Today</p>
+        <img src="Image/image rain.png" alt="Thunderstorm">
+        <p>68° / 36°</p>
+        <p>Pollen 36</p>
+      </div>
+      <div class="day">
+        <p>Wednesday</p>
+        <img src="Image/Image 9 rain.png" alt="Sunny">
+        <p>50° / 39°</p>
+        <p>Pollen 36</p>
+      </div>
+      <div class="day">
+        <p>Thursday</p>
+        <img src="Image/Image 9 rain.png" alt="Sunny">
+        <p>55° / 39°</p>
+        <p>Pollen 36</p>
+      </div>
+      <div class="day">
+        <p>Friday</p>
+        <img src="Image/Image2 rain.png" alt="Partly Cloudy">
+        <p>54° / 43°</p>
+        <p>Pollen 36</p>
+      </div>
+      <div class="day">
+        <p>Saturday</p>
+        <img src="Image/Image6 rain.png" alt="Rain">
+        <p>64° / 46°</p>
+        <p>Pollen 36</p>
+      </div>
+      <div class="day">
+        <p>Sunday</p>
+        <img src="Image/Image6 rain.png" alt="Rain">
+        <p>64° / 50°</p>
+        <p>Pollen 36</p>
+      </div>
+      <div class="day">
+        <p>Monday</p>
+        <img src="Image/Image3 sunny.png" alt="Partly Cloudy">
+        <p>61° / 50°</p>
+        <p>Pollen 36</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .weather-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .current-weather {
+    margin-bottom: 20px;
+  }
+  
+  .city {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .date, .condition {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  .temperature {
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    margin: 10px 0;
+  }
+  
+  .temperature img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .details {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .details li {
+    margin: 3px 0;
+  }
+  
+  /* Weekly Forecast */
+  .weekly-forecast {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+  }
+  
+  .day {
+    text-align: center;
+    border-top: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  
+  .day img {
+    width: 40px;
+    height: 40px;
+    margin: 10px 0;
+  }
+  
+  .day p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+  }
+  
+  .day p:first-child {
+    font-weight: bold;
+    color: #333;
+  }
+  

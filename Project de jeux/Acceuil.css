@@ -1,0 +1,63 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #game-container {
+    width: 80%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Instructions */
+  #instructions {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Zone des choix */
+  #choices-container button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+  
+  #choices-container img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  /* Résultats */
+#result-container {
+    display: flex;
+    justify-content: space-around; /* Espace égal entre les éléments */
+    align-items: center;          /* Alignement vertical au centre */
+    margin: 20px 0;
+  }
+  
+  .player-box, .computer-box {
+    width: 150px; /* Taille fixe pour uniformiser les boîtes */
+    text-align: center;
+  }
+  
+  .player-box img, .computer-box img {
+    width: 100px; /* Taille uniforme pour les images */
+    height: auto;
+  }
+  
+  .vs {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0 20px;
+  }
+  

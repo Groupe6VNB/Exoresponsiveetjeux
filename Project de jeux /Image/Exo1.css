@@ -1,0 +1,56 @@
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: block; /* Par défaut, les containers s'empilent verticalement */
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Header : masqué par défaut */
+  .header {
+    display: none;
+  }
+  
+  /* Footer : masqué par défaut */
+  .footer {
+    display: none;
+  }
+  
+  /* Responsive Design */
+  
+  /* 1. Containers en colonnes au-dessus de 640px */
+  @media (min-width: 640px) {
+    .container {
+      display: inline-block; /* Positionne côte à côte */
+      width: 48%; /* Chaque container prend 48% de largeur */
+      vertical-align: top;
+    }
+  }
+  
+  /* 2. Header visible au-dessus de 800px */
+  @media (min-width: 800px) {
+    .header {
+      display: block;
+      background-color: #f4f4f4;
+      padding: 15px;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* 3. Footer visible uniquement à l'impression */
+  @media print {
+    .footer {
+      display: block;
+      text-align: center;
+      font-size: 1rem;
+      margin-top: 20px;
+    }
+  }
+  

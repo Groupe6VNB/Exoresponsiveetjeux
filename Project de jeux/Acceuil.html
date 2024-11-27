@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pierre-Feuille-Ciseaux</title>
+  <link rel="stylesheet" href="Acceuil.css">
+</head>
+<body>
+  <div id="game-container">
+    <!-- Instructions -->
+    <div id="instructions">
+      <h2>Bienvenue dans le jeu Pierre-Feuille-Ciseaux !</h2>
+      <p>Voici les règles :</p>
+      <ul>
+        <li>Pierre bat Ciseaux.</li>
+        <li>Feuille bat Pierre.</li>
+        <li>Ciseaux battent Feuille.</li>
+      </ul>
+      <p>Appuyez sur un des boutons pour jouer.</p>
+    </div>
+
+    <!-- Zone des choix -->
+    <div id="choices-container">
+      <button onclick="playGame(1)">
+        <img src="Image/image pierre.webp" alt="Pierre">
+      </button>
+      <button onclick="playGame(2)">
+        <img src=" Image/Image main originale.jpeg" alt="Feuille">
+      </button>
+      <button onclick="playGame(3)">
+        <img src="Image/image main ciseau.webp" alt="Ciseaux">
+      </button>
+    </div>
+
+    <!-- Zone des résultats -->
+    <div id="result-container">
+      <div class="player-box">
+        <h3>Votre Choix</h3>
+        <img id="playerChoice" src="images/question.png" alt="Votre choix">
+      </div>
+      <div class="vs">
+        <h1>VS</h1>
+      </div>
+      <div class="computer-box">
+        <h3>Choix de l'Ordinateur</h3>
+        <img id="computerChoice" src="images/question.png" alt="Choix de l'ordinateur">
+      </div>
+    </div>
+
+    <!-- Score -->
+    <div id="score-container">
+      <p>Joueur : <span id="playerScore">0</span> | Ordinateur : <span id="computerScore">0</span></p>
+    </div>
+
+    <!-- Bouton Reset -->
+    <div id="reset-container">
+      <button onclick="resetGame()">Réinitialiser</button>
+    </div>
+  </div>
+
+  <script src="Acceuil.js"></script>
+</body>
+</html>

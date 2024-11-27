@@ -1,0 +1,153 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #333;
+}
+
+.weather-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Top section styles */
+.current-weather {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.city-info {
+  max-width: 60%;
+}
+
+.city {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.date, .condition {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.temp-details {
+  text-align: right;
+}
+
+.temp {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.temp img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.extra-details {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.extra-details li {
+  margin: 5px 0;
+}
+
+/* Forecast section styles */
+.forecast {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+}
+
+.forecast-day {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+}
+
+.day {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.forecast-day img {
+  width: 40px;
+  height: 40px;
+
+}
+
+.temp-range {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #333;
+  line-height: 1.2;
+}
+
+.pollen {
+  font-size: 0.9rem;
+  color: #777;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .current-weather {
+    flex-direction: column; /* Empile les éléments sur petit écran */
+    text-align: center;
+  }
+
+  .city-info, .temp-details {
+    flex: 1 1 100%; /* Chaque section prend toute la largeur */
+  }
+
+  .temp {
+    justify-content: center;
+  }
+
+  .forecast-day {
+    flex-direction: column; /* Les éléments de chaque jour passent en colonne */
+    align-items: center;
+    text-align: center;
+  }
+
+  .day, .temp-range, .pollen {
+    flex: 1 1 100%; /* Chaque élément prend toute la largeur */
+    margin-bottom: 5px;
+  }
+
+  .forecast-day img {
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .city {
+    font-size: 1.5rem;
+  }
+
+  .temp {
+    font-size: 1.8rem;
+  }
+
+  .extra-details {
+    font-size: 0.8rem;
+  }
+
+  .day {
+    font-size: 0.9rem;
+  }
+}
